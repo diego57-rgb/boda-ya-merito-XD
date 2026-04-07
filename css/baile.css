@@ -1,0 +1,635 @@
+@media(min-width: 700px){
+    #realHeader{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        background-image: url("../assets/boda.jpg");
+        background-position: bottom;
+        background-size: cover;
+        box-shadow: 
+            inset 30px -30px 40px rgb(108, 108, 108);
+        right: 10px;
+        bottom: 10px;
+            
+    }
+
+    #header{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(15, 15, 15,0.8);
+        top: -5px;
+        left: 0px;
+        padding: 10px;
+        z-index: 100;
+        overflow-x: scroll;
+        align-items: center;
+        transform: none;
+    }
+
+    #header::-webkit-scrollbar{
+        width: 10px;
+    }
+    #header::-webkit-scrollbar-track{
+        background: transparent;
+        border-radius: 10px;
+    }
+    #header::-webkit-scrollbar-thumb {
+        background: rgb(205, 205, 205);
+        border-radius: 10px;
+    }
+    #header::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255,0.5);
+    }
+
+    #header img{
+        height: 100px;
+    }
+
+
+    .mi-fuente{
+        font-family: Verdana, Geneva, Tahoma, sans-serif, serif !important
+    }
+
+    .cadaIndice{
+        color: white; 
+        border-bottom: 1px solid white; 
+        margin-right: 2.5%;
+        margin-left: 2.5%; 
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:large;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+    .cadaIndice:hover{
+        color: bisque;
+    }
+    .cadaIndice:active{
+        color: bisque;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    @keyframes barrido {
+        to {transform:translateX(110%);}
+        to {opacity: 0.6;}
+    }
+    #inicio{
+        position: relative;
+        display: flex;
+        width: 100%; 
+        align-items: center; 
+        justify-content: center;
+        flex-direction: column;   
+        height: auto;
+        background-image: url("../assets/fondoVestido.jpg");
+        background-size: 33%;
+    }
+    #titulo{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+    }
+    #inicio::after{
+        content: "";
+        position: absolute;
+        background-color: white;
+        animation: barrido 2s forwards;
+        box-shadow: 0px 50px 50px white;
+        inset: 0;
+    }
+    .petalo{
+        display: flex;
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        border-radius: 100%;
+        background-image: url("../assets/petalo.png");
+        background-size: cover;
+        background-color: transparent;
+        border: 0px solid transparent;
+        transition: transformOrigin 3s ease-in-out 0s, transform 3s ease-in-out 0s;
+        align-items: center;
+        justify-content: center; 
+    }
+    #centro{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(circle at 50% 50%, #ffeeb6, #defa40);
+        border-radius: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+    .petalo:hover{
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    .petalo:active{
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    #flor{
+        position: relative;
+        width: 200px;
+        height: 200px;;
+        margin-top: 20%;
+    }
+    .text-p{
+        text-align: center;
+        padding: 10px;
+        font-size: small;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:lighter;
+        margin-left: 30%;
+        margin-right: 20%;
+        color: rgb(96, 96, 96);
+        border-bottom: 1.5px solid white;
+    }
+    #title{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+        color: black;
+        background-color: white;
+        padding: 20px;
+    }
+    #text-content{
+        display: flex;
+        position: relative;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 50%;
+        background-color: white;
+        padding: 20px;
+        text-align: justify;
+    }
+    .text-x{
+        display: flex;
+        position: relative;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 50%;
+        background-color: white;
+        padding: 20px;
+        text-align: justify;
+    }
+    .sticker{   
+        position: relative;  
+        width: 100px; 
+        height: 100px; 
+        background-color: transparent;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid rgb(107, 107, 107);
+        border-radius: 10px;
+    }
+    .sticker:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .sticker:active{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    #stickers{
+        position: relative;
+        width: 28%;
+        height: 200px;
+        overflow-y: scroll;
+        padding: 20px;
+        margin-bottom: 50px;
+        background-color: white;
+        flex-direction: column;
+        z-index: 11;
+    }
+    #mas{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0px solid transparent;
+        -webkit-tap-highlight-color: transparent;
+    }
+    #mas:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    #mas:active{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    #mousy{
+        position: absolute;
+        background-image: url('../stickers/st1.png');
+        background-size: contain;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 0px solid transparent;
+        display: none;
+        width: 100px;
+        height: 100px;
+        z-index: 10;
+    }
+    #mousy:active{
+        scale: 1.2;
+    }
+    #musy{
+        position: fixed;
+        background-image: url('../stickers/st1.png');
+        background-size: contain;
+        background-color: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        border: 2px solid gray;
+        top: 150px;
+        cursor: pointer;
+        align-items: center;
+        z-index: 11;
+        display: none;
+        color: black;
+    }
+    #musy::after{
+        content: "Pulsa para quitar";
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+    #musy:hover::after{
+        content: "Quitar";
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+    #musy:active::after{
+        content: "Quitar";
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+    .audio_b{
+        display: flex;
+        position: relative;
+        width: 70%;
+        height: 200px;
+        margin-top: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: 0px solid transparent;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .audio_b:active{
+        scale: 1.1;
+        opacity: 0.8
+    }
+    .audio_b:hover{
+        scale: 1.1;
+    }
+
+}
+
+@media(max-width:699px){
+    #realHeader{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 180px;
+        padding: 10px;
+        background-image: url("../assets/boda.jpg");
+        background-position: bottom;
+        background-size: cover;
+        box-shadow: 
+            inset 30px -30px 40px rgb(108, 108, 108);
+        right: 10px;
+        bottom: 10px;
+    }
+
+
+    #header{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(15, 15, 15,0.8);
+        top: -5px;
+        left: 0px;
+        padding: 10px;
+        z-index: 100;
+        align-items:center;
+        padding: 15px;
+        overflow-x: scroll;
+        transform: none;
+    }
+
+    #header::-webkit-scrollbar{
+        width: 10px;
+    }
+    #header::-webkit-scrollbar-track{
+        background: transparent;
+        border-radius: 10px;
+    }
+    #header::-webkit-scrollbar-thumb {
+        background: rgb(205, 205, 205);
+        border-radius: 10px;
+    }
+
+
+
+    #header img{
+        height: 50px;
+    }
+
+
+    .mi-fuente{
+        font-family: Verdana, Geneva, Tahoma, sans-serif, serif !important
+    }
+
+    .cadaIndice{
+        color: white; 
+        border-bottom: 1px solid white; 
+        margin-right: 8%;
+        margin-left: 2.5%; 
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:small;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+    .cadaIndice:hover{
+        color: bisque;
+    }
+    .cadaIndice:active{
+        color: bisque;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    @keyframes barrido {
+        to {transform:translateX(110%);}
+        to {opacity: 0.6;}
+    }
+    #inicio{
+        position: relative;
+        display: flex;
+        width: 100%; 
+        align-items: center; 
+        justify-content: center;
+        flex-direction: column;   
+        height: auto;
+        background-image: url("../assets/fondoVestido.jpg");
+        background-size: 33%;
+    }
+    #titulo{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+    }
+    #inicio::after{
+        content: "";
+        position: absolute;
+        background-color: white;
+        animation: barrido 2s forwards;
+        box-shadow: 0px 50px 50px white;
+        inset: 0;
+    }
+    .petalo{
+        display: flex;
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        border-radius: 100%;
+        background-image: url("../assets/petalo.png");
+        background-size: cover;
+        background-color: transparent;
+        border: 0px solid transparent;
+        transition: transformOrigin 3s ease-in-out 0s, transform 3s ease-in-out 0s;
+        align-items: center;
+        justify-content: center; 
+    }
+    #centro{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(circle at 50% 50%, #ffeeb6, #defa40);
+        border-radius: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+    .petalo:hover{
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    .petalo:active{
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    #flor{
+        position: relative;
+        width: 200px;
+        height: 200px;;
+        margin-top: 50%;
+    }
+    .text-p{
+        text-align: center;
+        padding: 10px;
+        font-size: small;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:lighter;
+        margin-left: 10%;
+        margin-right: 30%;
+        color: rgb(96, 96, 96);
+        border-bottom: 1.5px solid white;
+    }
+    #title{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+        color: black;
+        background-color: white;
+        padding: 20px;
+    }
+    #text-content{
+        display: flex;
+        position: relative;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 80%;
+        background-color: white;
+        padding: 20px;
+        text-align: justify;
+    }
+    .text-x{
+        display: flex;
+        position: relative;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 80%;
+        background-color: white;
+        padding: 20px;
+        text-align: justify;
+    }
+    .sticker{   
+        position: relative;  
+        width: 100px; 
+        height: 100px; 
+        background-color: transparent;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid rgb(107, 107, 107);
+        border-radius: 10px;
+    }
+    .sticker:active{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    #stickers{
+        position: relative;
+        width: 56%;
+        height: 200px;
+        overflow-y: scroll;
+        padding: 20px;
+        margin-bottom: 50px;
+        background-color: white;
+        border: 0px solid transparent;
+        border-radius: 10px;
+    }
+    #mas{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 0px solid transparent;
+        -webkit-tap-highlight-color: transparent;
+    }
+    #mas:active{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    #mousy{
+        position: absolute;
+        background-image: url('../stickers/st1.png');
+        background-size: contain;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 0px solid transparent;
+        display: none;
+        width: 100px;
+        height: 100px;
+    }
+    #mousy:active{
+        scale: 1.2;
+    }
+    #musy{
+        position: fixed;
+        background-image: url('../stickers/st1.png');
+        background-size: contain;
+        background-color: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        border: 2px solid gray;
+        top: 150px;
+        cursor: pointer;
+        color: black;
+        align-items: center;
+        display: none
+    }
+    #musy::after{
+        content: "Pulsa para quitar";
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+    #musy:active::after{
+        content: "Quitar";
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .audio_b{
+        display: flex;
+        position: relative;
+        width: 70%;
+        height: 200px;
+        margin-top: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: 0px solid transparent;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .audio_b:active{
+        scale: 1.1;
+        opacity: 0.8
+    }
+}

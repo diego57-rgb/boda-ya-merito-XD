@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>El Baile de la Boda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/baile.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body style="display: flex; overflow-x: hidden; flex-direction: column; margin: 0px;">
+        <div style="display: flex; flex-direction: column; overflow-x: hidden;">
+            
+        <div id="realHeader">
+            <div id = "header">
+                <img src="./assets/miBoda.png">
+                <a href="./index.html" class="cadaIndice">Inicio</a>
+                <a href="./pedidaDeMano.html" class="cadaIndice">Pedida de Mano</a>
+                <a href="./sesionDeFotos.html" class="cadaIndice">Sesión de Fotos</a>
+                <a href="./codigoVestir.html" class="cadaIndice">Código de Vestimenta</a>
+                <a href="./dinamicas.html" class="cadaIndice">Dinámicas</a>
+                <a href="./despedida.html" class="cadaIndice">Despedida de soltera</a>
+                <a class="cadaIndice">Salón de fiestas</a>
+                <a href="./baile.html" class="cadaIndice">Baile</a>
+            </div>
+            <h2 
+            style="position: relative; margin-top: auto; 
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif, cursive; 
+            color: white; font-weight: lighter; margin-left: 10px;"><em>Por el amor</em></h2>
+        </div>
+        <h1 id = "titulo">El baile de la Boda</h1>
+        <div id = "inicio">
+            <div id="flor">
+                <div id="centro"></div>
+                <button class="petalo" onclick="cambiarTexto(0,0)">
+                    <h1 class="text-p"><strong>¿Porque el baile?</strong></h1>
+                </button>
+                <button class="petalo" onclick="cambiarTexto(1,1)">
+                    <h1 class="text-p"><strong>¿Qué debe haber?</strong></h1>
+                </button>
+                <button class="petalo" onclick="cambiarTexto(2,2)">
+                    <h1 class="text-p"><strong>¿Qué hace especial a un baile?</strong></h1>
+                </button>
+                <button class="petalo" onclick="cambiarTexto(3,3)">
+                    <h1 class="text-p"><strong>Música del baile</strong></h1>
+                </button>
+                <button class="petalo" onclick="cambiarTexto(4,4)">
+                    <h1 class="text-p"><strong>Tradiciones</strong></h1>
+                </button>
+                <button class="petalo" onclick="cambiarTexto(5,5)">
+                    <h1 class="text-p"><strong>Ambiente</strong></h1>
+                </button>
+            </div>
+            <h1 id="title">El baile de mi Boda</h1>
+            <p class="text-x" id="text-content"></p>
+            <p class="text-x"></p>
+            <p class="text-x"></p>
+            <p class="text-x"></p>
+            <p class="text-x"></p>
+            
+            <button id="mas" onclick="boxy()" style="background-image: url('./stickers/mas.png')"></button>
+
+            <div id="stickers">
+                <button class="sticker" onclick="stickerAction(0)" style="background-image: url('./stickers/st1.png');"></button>
+                <button class="sticker" onclick="stickerAction(2)" style="background-image: url('./stickers/st3.png');"></button>
+                <button class="sticker" onclick="stickerAction(4)" style="background-image: url('./stickers/st5.png');"></button>
+                <button class="sticker" onclick="stickerAction(5)" style="background-image: url('./stickers/st6.png');"></button>
+                <button class="sticker" onclick="stickerAction(6)" style="background-image: url('./stickers/st7.png');"></button>
+                <button class="sticker" onclick="stickerAction(7)" style="background-image: url('./stickers/st8.png');"></button>
+                <button class="sticker" onclick="stickerAction(9)" style="background-image: url('./stickers/st10.png');"></button>
+                <button class="sticker" onclick="stickerAction(10)" style="background-image: url('./stickers/st11.png');"></button>
+                <button class="sticker" onclick="stickerAction(11)" style="background-image: url('./stickers/st12.png');"></button>
+                <button class="sticker" onclick="stickerAction(12)" style="background-image: url('./stickers/st13.png');"></button>
+                <button class="sticker" onclick="stickerAction(14)" style="background-image: url('./stickers/st15.png');"></button>
+                <button class="sticker" onclick="stickerAction(15)" style="background-image: url('./stickers/st16.png');"></button>
+                <button class="sticker" onclick="stickerAction(16)" style="background-image: url('./stickers/st17.png');"></button>
+                <button class="sticker" onclick="stickerAction(17)" style="background-image: url('./stickers/st18.png');"></button>
+                <button class="sticker" onclick="stickerAction(18)" style="background-image: url('./stickers/st19.png');"></button>
+                <button class="sticker" onclick="stickerAction(19)" style="background-image: url('./stickers/st20.png');"></button>
+                <button class="sticker" onclick="stickerAction(20)" style="background-image: url('./stickers/st21.png');"></button>
+                <button class="sticker" onclick="stickerAction(21)" style="background-image: url('./stickers/st22.png');"></button>
+            </div>
+            <button class="audio_b" onclick="musica(0)" style="background-image: url('./assets/miles_pause.png');"></button>
+            <button class="audio_b" onclick="musica(1)" style="background-image: url('./assets/chasing_pause.png');"></button>
+            <button class="audio_b" onclick="musica(2)" style="background-image: url('./assets/wolves_pause.png');"></button>
+        </div>
+        
+        
+        
+        <div id = "allStickers"></div>
+        <button id="mousy" onclick="ponerSticker()"></button>
+        <button id="musy" onclick="stickerOut()"></button>
+
+        <audio src="./audios/A thounsand miles.mp3" id ="a_thounsand_miles"></audio>
+        <audio src="./audios/Wolves.mp3" id ="wolves"></audio>
+        <audio src="./audios/Chasing cars.mp3" id ="chasing_cars"></audio>
+
+        <script src="./js/baile.js"></script>        
+    </body>
+</html>
+

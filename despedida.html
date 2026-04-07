@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sesion de Fotos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/despedida.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body style="display: flex; overflow-x: hidden; flex-direction: column; margin: 0px;">
+        <div style="display: flex; flex-direction: column; overflow-x: hidden;">
+        <div id="realHeader">
+            <div id = "header">
+                <img src="./assets/miBoda.png">
+                <a href="./index.html" class="cadaIndice">Inicio</a>
+                <a href="./pedidaDeMano.html" class="cadaIndice">Pedida de Mano</a>
+                <a href="./sesionDeFotos.html" class="cadaIndice">Sesión de Fotos</a>
+                <a href="./codigoVestir.html" class="cadaIndice">Código de Vestimenta</a>
+                <a href="./dinamicas.html" class="cadaIndice">Dinámicas</a>
+                <a href="./despedida.html" class="cadaIndice">Despedida de soltera</a>
+                <a class="cadaIndice">Salón de fiestas</a>
+                <a href="./baile.html" class="cadaIndice">Baile</a>
+            </div>
+            <h2 
+            style="position: relative; margin-top: auto; 
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif, cursive; 
+            color: white; font-weight: lighter; margin-left: 10px;"><em>Por el amor</em></h2>
+        </div>
+        <h1 id = "titulo">Mi despedida de Soltera</h1>
+
+        <div id="inicio" style="background-image: url(./assets/fondoMuerdago.jpg); position: relative;">
+            <button id="bolsa" onclick="romperBolsa()" style="background-image: url(./despedida-assets/bolsa1.png);"></button>
+            <audio id="audio" src="./despedida-assets/blinky.mp3"></audio>
+            <audio id="bien" src="./despedida-assets/bien.mp3"></audio>
+        </div>
+        <script src="./js/despedida.js"></script>
+    </body>
+</html>
+

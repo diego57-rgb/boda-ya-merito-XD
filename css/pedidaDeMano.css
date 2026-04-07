@@ -1,0 +1,307 @@
+@media(min-width: 700px){
+    #realHeader{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        background-image: url("../assets/boda.jpg");
+        background-position: bottom;
+        background-size: cover;
+        box-shadow: 
+            inset 30px -30px 40px rgb(108, 108, 108);
+        right: 10px;
+        bottom: 10px;
+            
+    }
+
+    #header{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(15, 15, 15,0.8);
+        top: -5px;
+        left: 0px;
+        padding: 10px;
+        z-index: 100;
+        overflow-x: scroll;
+        align-items: center;
+        transform: none;
+    }
+
+    #header::-webkit-scrollbar{
+        width: 10px;
+    }
+    #header::-webkit-scrollbar-track{
+        background: transparent;
+        border-radius: 10px;
+    }
+    #header::-webkit-scrollbar-thumb {
+        background: rgb(205, 205, 205);
+        border-radius: 10px;
+    }
+    #header::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255,0.5);
+    }
+
+    #header img{
+        height: 100px;
+    }
+
+
+    .mi-fuente{
+        font-family: Verdana, Geneva, Tahoma, sans-serif, serif !important
+    }
+
+    .cadaIndice{
+        color: white; 
+        border-bottom: 1px solid white; 
+        margin-right: 2.5%;
+        margin-left: 2.5%; 
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:large;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+    .cadaIndice:hover{
+        color: bisque;
+    }
+    .cadaIndice:active{
+        color: bisque;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    @keyframes barrido {
+        to {transform:translateX(110%);}
+        to {opacity: 0.6;}
+    }
+    #inicio{
+        position: relative;
+        display: flex;
+        width: 100%; 
+        align-items: center; 
+        flex-direction: row;   
+        height: auto;
+        background-image: url("../assets/fondoMano.jpg");
+    }
+    #titulo{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+    }
+    #inicio::after{
+        content: "";
+        position: absolute;
+        background-color: white;
+        animation: barrido 2s forwards;
+        box-shadow: 0px 50px 50px white;
+        inset: 0;
+    }
+    p{
+        text-align: justify;
+        padding: 10px;
+        font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: medium;
+        border-right: 2px solid black;
+    }
+    #mano{
+        position: relative;
+        height: 300px;
+        margin: 10px;
+        background-image: url("../assets/manoW.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #video{
+        position: relative;
+        height: 300px;
+        background-image: url("../assets/videoW.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+    }
+    #estilo{
+        position: relative;
+        height: 300px;
+        background-image: url("../assets/estiloW.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+    }
+    .text-containers{
+        width: auto;
+    }
+}
+
+@media(max-width:699px){
+    #realHeader{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 180px;
+        padding: 10px;
+        background-image: url("../assets/boda.jpg");
+        background-position: bottom;
+        background-size: cover;
+        box-shadow: 
+            inset 30px -30px 40px rgb(108, 108, 108);
+        right: 10px;
+        bottom: 10px;
+    }
+
+
+    #header{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(15, 15, 15,0.8);
+        top: -5px;
+        left: 0px;
+        padding: 10px;
+        z-index: 100;
+        align-items:center;
+        padding: 15px;
+        overflow-x: scroll;
+        transform: none;
+    }
+
+    #header::-webkit-scrollbar{
+        width: 10px;
+    }
+    #header::-webkit-scrollbar-track{
+        background: transparent;
+        border-radius: 10px;
+    }
+    #header::-webkit-scrollbar-thumb {
+        background: rgb(205, 205, 205);
+        border-radius: 10px;
+    }
+
+
+
+    #header img{
+        height: 50px;
+    }
+
+
+    .mi-fuente{
+        font-family: Verdana, Geneva, Tahoma, sans-serif, serif !important
+    }
+
+    .cadaIndice{
+        color: white; 
+        border-bottom: 1px solid white; 
+        margin-right: 8%;
+        margin-left: 2.5%; 
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:small;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+    .cadaIndice:hover{
+        color: bisque;
+    }
+    .cadaIndice:active{
+        color: bisque;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    @keyframes barrido {
+        to {transform:translateX(110%);}
+        to {opacity: 0.6;}
+    }
+    #inicio{
+        position: relative;
+        display: flex;
+        width: 100%; 
+        align-items: center; 
+        flex-direction: column;   
+        height: auto;
+        background-image: url("../assets/fondoMano.jpg");
+    }
+    #titulo{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+    }
+    #inicio::after{
+        content: "";
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 50px 50px white;
+        animation: barrido 2s forwards;
+        inset: 0;
+    }
+    p{
+        text-align: justify;
+        padding: 10px;
+        font-size: small;
+        font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-right: 2px solid black;
+    }
+    #mano{
+        position: relative;
+        height: 300px;
+        background-image: url("../assets/mano.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+    }
+    #video{
+        position: relative;
+        height: 300px;
+        background-image: url("../assets/video.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+    }
+    #estilo{
+        position: relative;
+        height: 300px;
+        background-image: url("../assets/estilo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+    }
+    .text-containers{
+        width: 70%;
+    }
+}
